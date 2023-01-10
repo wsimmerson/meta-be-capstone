@@ -2,56 +2,45 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Little Lemon</title>
-    <meta name="description" content="A brief description" />
-    <meta
-      name="author"
-      content="Based in Chicago, Illinois, Little Lemon is a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist."
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Load favicon -->
-    <link
-      rel="shortcut icon"
-      type="image/png"
-      href="{% static 'img/favicon.ico' %}"
-    />
+  <title>Little Lemon</title>
+  <meta name="description" content="A brief description" />
+  <meta name="author"
+    content="Based in Chicago, Illinois, Little Lemon is a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist." />
 
-    <!-- Include your CSS files here -->
-    <link
-      rel="preload"
-      as="style"
-      href="{% static 'css/style.css' %}"
-      onload="this.rel = 'stylesheet'"
-    />
+  <!-- Load favicon -->
+  <link rel="shortcut icon" type="image/png" href="{% static 'img/favicon.ico' %}" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!-- Include your CSS files here -->
+  <link rel="preload" as="style" href="{% static 'css/style.css' %}" onload="this.rel = 'stylesheet'" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text:wght@500&display=swap"
+    rel="stylesheet" />
+</head>
 <header>
   <img src="{% static 'img/logo.png' %}" />
-    </header>
-    <nav>
-      <ul>
-        <li><a href="{% url 'home' %}">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Book</a></li>
-      </ul>
-  </nav>
+</header>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Menu</a></li>
+    <li><a href="#">Book</a></li>
+  </ul>
+</nav>
+
 <body>
-<section>
+  <section>
     <article id="hero">
       <h1 class="heading_shadow">SPECIAL OFFER</h1>
       <p>
-        30% Off This Weekend 
+        30% Off This Weekend
       </p>
       <a href="#" class="cta"> Book now </a>
     </article>
@@ -81,7 +70,7 @@
       <h2>Opening Hours</h2>
       <img src="{% static 'img/head_chef.jpg' %}">
       <p>
-        The Little Lemon Restaurant is open 7 days a week, except for public holidays. 
+        The Little Lemon Restaurant is open 7 days a week, except for public holidays.
       </p>
       <ul>
         <li>Mon - Fri: 2pm - 10pm</li>
@@ -99,4 +88,5 @@
     </article>
   </footer>
 </body>
+
 </html>
